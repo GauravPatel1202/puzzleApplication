@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+border: 40px solid transparent;
+padding: 40px;
+background-image: url("bg.jpg");
+border-image: url(board.jpg) 5 round;
+margin: 0px;
+height: -webkit-fill-available;
+width: -webkit-fill-available;
+}
+  
+    
+   
