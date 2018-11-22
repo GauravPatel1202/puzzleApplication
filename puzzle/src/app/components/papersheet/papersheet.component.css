@@ -10,11 +10,12 @@
   float: left;
   list-style: none;
   text-align: center;
-  background-color: #000000;
   margin-right: 10px;
   width: 100px;
+  border: 1px solid;
   line-height: 30px;
   color: #FFF;
+  cursor:pointer;
 }
 #buttons{
     bottom: 0px;
