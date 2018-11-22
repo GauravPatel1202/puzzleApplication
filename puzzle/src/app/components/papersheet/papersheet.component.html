@@ -1,3 +1,18 @@
-<p>
-  papersheet works!
-</p>
+ <ul class="unstyled">
+     <li *ngFor="let data of tablelist|slice:startvalue:endvalue;index as i" [attr.data-index]="i">
+       <strong class="question"><h1>{{ data.text }}</h1></strong>
+         <ul class="unstyled">
+         <li *ngFor="let question of data.options;index as i" [attr.data-index]="i" style="list-style: none;
+    padding: 8px 0px;
+    font-size: 20px;">
+           <span style="padding: 0px 8px 0px;">{{i==0?"A":i==1?"B":i==2?"C":i==3?"D":''}})</span><span class="question">{{ question }}</span>
+         </li>
+        </ul>
+
+   </li>
+</ul>
+<ul>
+<ul id="buttons">
+  <li *ngFor="let Booton of arrayBooton;index as i" [attr.data-index]="i" (click)="getlistDataAnswer(Booton,i)"><a >{{Booton==0?"A":Booton==1?"B":Booton==2?"C":Booton==3?"D":''}}</a></li>
+</ul>
+   

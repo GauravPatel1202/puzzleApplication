@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { Observable } from 'rxjs/observable';
 import { AppComponent } from './app.component';
 import { PapersheetComponent } from './components/papersheet/papersheet.component';
 import { ResultsheetComponent } from './components/resultsheet/resultsheet.component';
@@ -13,7 +15,9 @@ import { ResultsheetComponent } from './components/resultsheet/resultsheet.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

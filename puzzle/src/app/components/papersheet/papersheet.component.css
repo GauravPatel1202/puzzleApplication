@@ -1,0 +1,23 @@
+
+.isCorrect_true{
+  background-color: green;
+}
+
+.isCorrect_false{
+  background-color: red;
+}
+#buttons li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 10px;
+  width: 100px;
+  line-height: 30px;
+  color: #FFF;
+}
+#buttons{
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 10%;
+    }

@@ -1,3 +1,17 @@
-<p>
-  resultsheet works!
-</p>
+ <table>
+  <tr>
+    <th>Question</th>
+    <th>Correct Answer</th>
+    <th>Your Answer</th>
+    <th>Mark</th>
+  </tr>
+  <tr  *ngFor="let data of resultsheetlist;index as i" [attr.data-index]="i">
+    <td>{{data.text}}</td>
+    <td>{{data.answer==0?"A":data.answer==1?"B":data.answer==2?"C":data.answer==3?"D":''}}</td>
+    <td>{{data.givenAnswer==0?"A":data.givenAnswer==1?"B":data.givenAnswer==2?"C":data.givenAnswer==3?"D":''}}</td>
+    <td>
+    	<p class='right' *ngIf="data.answer==data.givenAnswer">&#10004;</p>
+        <p class='wrong' *ngIf="data.answer != data.givenAnswer">&#10006;</p>
+    </td>
+  </tr>
+</table>
